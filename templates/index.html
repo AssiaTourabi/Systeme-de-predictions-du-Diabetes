@@ -1,0 +1,42 @@
+{% extends 'base.html' %}  
+
+{% block head %}  
+<title>Task master</title>
+{% endblock %}
+
+{% block body %}  
+<h1 id="task">Enter the following informations</h1>
+<br> <br>
+
+<form action="/" method="post">
+    <div  id="add">
+        <label for="Pregnancies">Pregnancies</label>
+      <input type="text" name="pregnancies" id="pregnancies" class="form-control col-md-6">
+      <br><br>
+      <label for="Glucose">Glucose</label>
+      <input type="text" name="glucose" id="glucose" class="form-control col-md-6">
+        <br><br>
+      <label for="BloodPressure">Blood Pressure</label>
+      <input type="text" name="bloodPressure" id="bloodPressure" class="form-control col-md-6">
+<br><br>
+      <label for="SkinThickness">Skin Thickness</label>
+      <input type="text" name="skinThickness" id="skinThickness" class="form-control col-md-6">
+<br><br>
+      <label for="Insulin">Insulin</label>
+      <input type="text" name="insulin" id="insulin" class="form-control col-md-6">
+<br> <br>
+      <label for="BMI">BMI</label>
+      <input type="text" name="BMI" id="BMI" class="form-control col-md-6">
+<br><br>
+      <label for="Diabetes Pedigree Function"> Diabetes Pedigree Function</label>
+      <input type="text" name="diabetesPedigreeFunction" id="diabetesPedigreeFunction" class="form-control col-md-6">
+<br><br>
+      <label for="Age">Age</label>
+      <input type="text" name="age" id="age" class="form-control col-md-6">
+<br><br>
+      <input type="submit" value="submit" class="btn btn-success" >
+      <br>
+      {{ result }}
+    </div>
+</form>
+{% endblock %}
